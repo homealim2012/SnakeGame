@@ -1,0 +1,43 @@
+# Microsoft Developer Studio Generated Dependency File, included by Ã∞≥‘…ﬂ.mak
+
+.\AboutDialog.cpp : \
+	".\AboutDialog.h"\
+	".\Ã∞≥‘…ﬂ.h"\
+	
+
+.\HelpDialog.cpp : \
+	".\HelpDialog.h"\
+	".\Ã∞≥‘…ﬂ.h"\
+	
+
+.\SpeedDialog.cpp : \
+	".\SpeedDialog.h"\
+	".\Ã∞≥‘…ﬂ.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\program files (x86)\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+".\Ã∞≥‘…ﬂ.cpp" : \
+	".\Ã∞≥‘…ﬂ.h"\
+	".\Ã∞≥‘…ﬂDlg.h"\
+	
+
+".\Ã∞≥‘…ﬂ.rc" : \
+	".\res\∆ªπ˚.bmp"\
+	".\res\…ﬂ…Ì.bmp"\
+	".\res\Ã∞≥‘…ﬂ.ico"\
+	".\res\Ã∞≥‘…ﬂ.rc2"\
+	".\res\Õ∏√˜.bmp"\
+	".\res\◊¿≤º.bmp"\
+	
+
+".\Ã∞≥‘…ﬂDlg.cpp" : \
+	".\AboutDialog.h"\
+	".\HelpDialog.h"\
+	".\SpeedDialog.h"\
+	".\Ã∞≥‘…ﬂ.h"\
+	".\Ã∞≥‘…ﬂDlg.h"\
+	

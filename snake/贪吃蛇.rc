@@ -1,0 +1,311 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\贪吃蛇.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\贪吃蛇.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 402, 267
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "贪吃蛇"
+MENU IDR_MENU1
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_HELP DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏玩法"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,121,15,50,14
+    LTEXT           "        按""A(←)"",""W(↑)"",""S(↓)"",""D(→)""分别控制蛇头向左、上、下、右移动。按Ctrl+S暂停/继续游戏。当蛇头触碰食物时，自身长度增加。当蛇头触碰自身和墙壁时游戏结束。",
+                    IDC_STATIC,15,14,95,67
+END
+
+IDD_DIALOG_SPEED DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义速度"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,14,53,104,14
+    EDITTEXT        IDC_EDIT1,66,20,51,19,ES_AUTOHSCROLL
+    LTEXT           "停歇时间(ms)：",IDC_STATIC,14,22,54,16
+END
+
+IDD_DIALOG_ABOUT DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,17,50,14
+    LTEXT           "名称：贪吃蛇",IDC_STATIC,14,18,49,10
+    LTEXT           "版本号：2.1.0.1",IDC_STATIC,14,33,61,10
+    LTEXT           "作者：贾全烨",IDC_STATIC,14,48,59,10
+    LTEXT           "日期：2014年10月26日",IDC_STATIC,14,63,83,10
+END
+
+IDD_DIALOG_DATA DIALOGEX 0, 0, 245, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读取/保存游戏进度"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "读取游戏进度",IDOK,171,21,58,14
+    PUSHBUTTON      "关闭",IDCANCEL,171,85,58,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | LVS_NOLABELWRAP | 
+                    LVS_AUTOARRANGE | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    21,31,136,80
+    EDITTEXT        IDC_EDIT1,45,146,75,13,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "选取游戏进度",IDC_STATIC,15,17,149,104
+    GROUPBOX        "当前游戏进度",IDC_STATIC,15,128,214,45
+    LTEXT           "日期:",IDC_STATIC,22,146,19,13
+    LTEXT           "蛇长:",IDC_STATIC,145,146,19,13
+    EDITTEXT        IDC_EDIT2,171,146,37,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "保存游戏进度",IDC_BUTTON1,171,43,58,14
+    PUSHBUTTON      "删除选中记录",IDC_BUTTON2,171,64,58,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,1,0,1
+ PRODUCTVERSION 2,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "贪吃蛇 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "2, 1, 0, 1\0"
+            VALUE "InternalName", "贪吃蛇\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "贪吃蛇.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "贪吃蛇 应用程序\0"
+            VALUE "ProductVersion", "2, 1, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_SPEED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 14
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        VERTGUIDE, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "游戏"
+    BEGIN
+        MENUITEM "开始游戏",                    ID_MENUITEM_START
+        MENUITEM "暂停",                        IDB_MENU_PAUSE
+        MENUITEM "读取/保存游戏进度",           IDB_MENU_READ
+        MENUITEM "退出",                        IDB_MENU_EXIT
+    END
+    POPUP "速度"
+    BEGIN
+        MENUITEM "慢",                          ID_MENUITEM_SLOW
+        MENUITEM "中",                          ID_MENUITEM_MEDIUM
+        MENUITEM "快",                          ID_MENUITEM_FAST
+        MENUITEM "自定义",                      ID_MENUITEM_UD
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "游戏玩法",                    ID_MENUITEM_HELP
+        MENUITEM "关于",                        ID_MENUITEM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BG           BITMAP  DISCARDABLE     "res\\桌布.bmp"
+IDB_BITMAP_FOOD         BITMAP  DISCARDABLE     "res\\苹果.bmp"
+IDB_BITMAP_SNAKE        BITMAP  DISCARDABLE     "res\\蛇身.bmp"
+IDB_BITMAP_NULL         BITMAP  DISCARDABLE     "res\\透明.bmp"
+IDB_BITMAP_ST           BITMAP  DISCARDABLE     "res\\s_bg_st.bmp"
+IDB_BITMAP_BAM          BITMAP  DISCARDABLE     "res\\竹.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\贪吃蛇.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
